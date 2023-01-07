@@ -4,20 +4,26 @@ using UnityEngine;
 using Array2DEditor;
 using System;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class Block : MonoBehaviour
 {
+    [SerializeField] private GameObject piecePrefab;
+    [SerializeField] private Array2DBool shape;
+    [SerializeField] private Color blockColor;
     public event Action PickupEvent;
     public event Action <bool> EndPickupEvent;
     public event Action CheckCanFix;
-    [SerializeField] private GameObject piecePrefab;
-    [SerializeField] private Array2DBool shape;
+    public event Action<bool> TriggerGlow;
     private bool isDragged = false;
-    public List<bool> canFix = new List<bool>();
+    [HideInInspector] public List<bool> canFix = new List<bool>();
+    private Vector2 initPos;
 
     // Start is called before the first frame update
     void Start()
     {
+        initPos = transform.position;
+        Debug.Log("offset: " + shape.GetCells().GetLength(0) * 100 + " , " + shape.GetCells().GetLength(1) * 100);
         GameObject newPiece = null;
 
         for (int i = 0; i < shape.GetCells().GetLength(0); i++)
@@ -29,7 +35,8 @@ public class Block : MonoBehaviour
                     //Debug.Log("i: " + i + " j: " + j);
                     newPiece = Instantiate(piecePrefab, new Vector3(0, 0, 0), Quaternion.identity);
                     newPiece.transform.SetParent(transform);
-                    newPiece.GetComponent<DraggableItem>().SetUpDraggable(gameObject);
+                    newPiece.GetComponent<DraggableItem>().SetUpDraggable(gameObject, new Vector3(j * 100, -i * 100, 0));
+                    newPiece.GetComponent<DraggableItem>().mainImage.color = blockColor;
                     newPiece.transform.localPosition = new Vector3(j*100, -i*100, 0);
                     newPiece.transform.localScale = new Vector3(1, 1, 1);
                 }
@@ -66,13 +73,32 @@ public class Block : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
+    public void Recall()
+    {
+        transform.position = initPos;
+    }    
+
     void FixedUpdate()
     {
         //Debug.Log("isDragged: " + isDragged);
         if (isDragged)
         {
-            transform.position = Input.mousePosition;
+            transform.position = Input.mousePosition - new Vector3(shape.GetCells().GetLength(0) * 50, -shape.GetCells().GetLength(1) * 50, 0);
+
+            if (TriggerGlow != null)
+            {
+                canFix.Clear();
+                CheckCanFix();
+                foreach (bool res in canFix)
+                {
+                    if (!res)
+                    {
+                        TriggerGlow(false);
+                        return;
+                    }
+                }
+                TriggerGlow(true);
+            }
         }
     }
 }
