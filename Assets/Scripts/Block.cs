@@ -23,6 +23,7 @@ public class Block : MonoBehaviour
     void Start()
     {
         initPos = transform.position;
+        GetComponent<Image>().enabled = false;
         Debug.Log("offset: " + shape.GetCells().GetLength(0) * 100 + " , " + shape.GetCells().GetLength(1) * 100);
         GameObject newPiece = null;
 
@@ -42,12 +43,14 @@ public class Block : MonoBehaviour
                 }
             }
         }
+        transform.localScale = new Vector3(.4f, .4f, 1f);
     }
 
     public void TriggerPickUp()
     {
         if (PickupEvent != null)
         {
+            transform.localScale = new Vector3(1f, 1f, 1f);
             PickupEvent();
             isDragged = true;
         }
@@ -65,6 +68,7 @@ public class Block : MonoBehaviour
                 if (!res)
                 {
                     EndPickupEvent(false);
+                    transform.localScale = new Vector3(.4f, .4f, 1f);
                     return;
                 }
             }
