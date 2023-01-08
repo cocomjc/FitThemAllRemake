@@ -39,12 +39,12 @@ public class BlockLerp : MonoBehaviour
         // Position Lerp
         if (!posMoving) return;
         currentPosLerpTime += Time.deltaTime;
-        if (currentPosLerpTime > scaleLerpTime)
+        if (currentPosLerpTime > posLerpTime)
         {
-            currentPosLerpTime = scaleLerpTime;
+            currentPosLerpTime = posLerpTime;
         }
-        float tPos = currentPosLerpTime / scaleLerpTime;
+        float tPos = currentPosLerpTime / posLerpTime;
         transform.position = Vector3.Lerp(transform.position, destination, tPos);
-        posMoving = !(currentPosLerpTime == scaleLerpTime);
+        posMoving = !(currentPosLerpTime == posLerpTime);
     }
 }

@@ -17,22 +17,22 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     {
         blockParent = _blockParent;
         initPos = _initPos;
-        blockParent.GetComponent<Block>().PickupEvent += GroupToParentBlock;
-        blockParent.GetComponent<Block>().CheckCanFix += CheckIfAnySlot;
-        blockParent.GetComponent<Block>().EndPickupEvent += DropPiece;
-        blockParent.GetComponent<Block>().TriggerGlow += Glow;
+        blockParent.GetComponent<BlockSetUp>().PickupEvent += GroupToParentBlock;
+        blockParent.GetComponent<BlockSetUp>().CheckCanFix += CheckIfAnySlot;
+        blockParent.GetComponent<BlockSetUp>().EndPickupEvent += DropPiece;
+        blockParent.GetComponent<BlockSetUp>().TriggerGlow += Glow;
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        blockParent.GetComponent<Block>().TriggerPickUp();
+        blockParent.GetComponent<BlockSetUp>().TriggerPickUp();
     }
 
     public void OnDrag(PointerEventData eventData) {}
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        blockParent.GetComponent<Block>().EndPickUp();
+        blockParent.GetComponent<BlockSetUp>().EndPickUp();
     }
 
     private void GroupToParentBlock()
@@ -49,7 +49,7 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
             transform.SetParent(freeSlot.transform);
         }
         else {
-            blockParent.GetComponent<Block>().Recall();
+            blockParent.GetComponent<BlockSetUp>().Recall();
             transform.localPosition = initPos;
         }
         glow.enabled = false;
@@ -70,12 +70,12 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
                 if (result.gameObject.GetComponent<Slot>() != null && result.gameObject.GetComponent<Slot>().IsOccupied() == false)
                 {
                     freeSlot = result.gameObject;
-                    blockParent.GetComponent<Block>().canFix.Add(true);
+                    blockParent.GetComponent<BlockSetUp>().canFix.Add(true);
                     return;
                 }
             }
         };
-        blockParent.GetComponent<Block>().canFix.Add(false);
+        blockParent.GetComponent<BlockSetUp>().canFix.Add(false);
         return;
     }
 
@@ -84,11 +84,11 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         glow.enabled = true;
         if (isGlowing)
         {
-            glow.color = Color.green;
+            glow.color = new Color(0.5f, 1f, 0.44f, .8f); ;
         }
         else
         {
-            glow.color = Color.black;
+            glow.color = new Color(0f, 0f, 0f, .8f); ;
         }
     }
 }

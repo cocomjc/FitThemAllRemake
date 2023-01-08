@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using static UnityEngine.GraphicsBuffer;
 
-public class Block : MonoBehaviour
+public class BlockSetUp : MonoBehaviour
 {
     [SerializeField] private GameObject piecePrefab;
     [SerializeField] private Array2DBool shape;
@@ -21,6 +21,7 @@ public class Block : MonoBehaviour
     private bool isDragged = false;
     [HideInInspector] public List<bool> canFix = new List<bool>();
     private Vector2 initPos;
+    [SerializeField] private Transform glowContainer;
 
     private void OnEnable()
     {
@@ -51,6 +52,13 @@ public class Block : MonoBehaviour
                     newPiece.GetComponent<DraggableItem>().mainImage.color = blockColor;
                     newPiece.transform.localPosition = new Vector3(j*100, -i*100, 0);
                     newPiece.transform.localScale = new Vector3(1, 1, 1);
+                    foreach (Transform child in newPiece.transform)
+                    {
+                        if (child.tag == "Glow")
+                        {
+                            child.SetParent(glowContainer);
+                        }
+                    }
                 }
             }
         }
