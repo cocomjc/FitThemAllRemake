@@ -15,17 +15,27 @@ public class Block : MonoBehaviour
     public event Action <bool> EndPickupEvent;
     public event Action CheckCanFix;
     public event Action<bool> TriggerGlow;
+    public VoidEvent OnGameReset;
     private bool isDragged = false;
     [HideInInspector] public List<bool> canFix = new List<bool>();
     private Vector2 initPos;
+
+    private void OnEnable()
+    {
+        OnGameReset.OnEventRaised += ResetBlock;
+    }
+
+    private void OnDisable()
+    {
+        OnGameReset.OnEventRaised -= ResetBlock;
+    }
 
     // Start is called before the first frame update
     void Start()
     {
         initPos = transform.position;
         GetComponent<Image>().enabled = false;
-        Debug.Log("offset: " + shape.GetCells().GetLength(0) * 100 + " , " + shape.GetCells().GetLength(1) * 100);
-        GameObject newPiece = null;
+        GameObject newPiece;
 
         for (int i = 0; i < shape.GetCells().GetLength(0); i++)
         {
@@ -33,7 +43,6 @@ public class Block : MonoBehaviour
             {
                 if (shape.GetCells()[i,j])
                 {
-                    //Debug.Log("i: " + i + " j: " + j);
                     newPiece = Instantiate(piecePrefab, new Vector3(0, 0, 0), Quaternion.identity);
                     newPiece.transform.SetParent(transform);
                     newPiece.GetComponent<DraggableItem>().SetUpDraggable(gameObject, new Vector3(j * 100, -i * 100, 0));
@@ -76,6 +85,13 @@ public class Block : MonoBehaviour
 
         }
     }
+    
+    private void ResetBlock()
+    {
+        TriggerPickUp();
+        Recall();
+        EndPickUp();
+    }
 
     public void Recall()
     {
@@ -84,7 +100,6 @@ public class Block : MonoBehaviour
 
     void FixedUpdate()
     {
-        //Debug.Log("isDragged: " + isDragged);
         if (isDragged)
         {
             transform.position = Input.mousePosition - new Vector3(shape.GetCells().GetLength(0) * 50, -shape.GetCells().GetLength(1) * 50, 0);

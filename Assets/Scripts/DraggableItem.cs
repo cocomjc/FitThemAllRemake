@@ -9,7 +9,6 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     [SerializeField] public Image mainImage;
     [SerializeField] private Image glow;
     [HideInInspector] private GameObject blockParent = null;
-    private bool isDragged = false;
     private GameObject freeSlot = null;
     private Vector2 initPos;
 
@@ -27,7 +26,6 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     public void OnBeginDrag(PointerEventData eventData)
     {
         blockParent.GetComponent<Block>().TriggerPickUp();
-        isDragged = true;
     }
 
     public void OnDrag(PointerEventData eventData) {}
@@ -55,7 +53,6 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
             transform.localPosition = initPos;
         }
         glow.enabled = false;
-        isDragged = false;
     }
 
     public void CheckIfAnySlot()
