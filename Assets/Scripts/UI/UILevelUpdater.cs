@@ -16,6 +16,6 @@ public class UILevelUpdater : MonoBehaviour
     }
     private void UpdateUi()
     {
-        GetComponent<TextMeshProUGUI>().text = "Level " + PlayerPrefs.GetInt("Level");
+        GetComponent<TextMeshProUGUI>().text = PlayerPrefs.GetString("LevelName");
     }
 }

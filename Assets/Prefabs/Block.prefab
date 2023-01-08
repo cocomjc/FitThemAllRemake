@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8403724625345996433}
   - component: {fileID: 8403724625345996438}
+  - component: {fileID: 4573207047918658457}
   - component: {fileID: 5356804011710177835}
   - component: {fileID: 98258793277799026}
   m_Layer: 5
@@ -64,6 +65,20 @@ MonoBehaviour:
   onGameReset: {fileID: 11400000, guid: c2a12561fbd4b1e498696a49800157de, type: 2}
   checkWin: {fileID: 11400000, guid: 6aa2a3a7c72a8884686b111ac026de92, type: 2}
   canFix: 
+--- !u!114 &4573207047918658457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8403724625345996432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 950161273d352f444a6cb77f4fce9e11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blockParam: {fileID: 11400000, guid: 0bbfb141794c91c43a7155e84dfa53fd, type: 2}
+  scaleLerpTime: 0.05
 --- !u!222 &5356804011710177835
 CanvasRenderer:
   m_ObjectHideFlags: 0

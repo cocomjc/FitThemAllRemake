@@ -4,6 +4,7 @@ using Array2DEditor;
 using System;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using static UnityEngine.GraphicsBuffer;
 
 public class Block : MonoBehaviour
 {
@@ -60,7 +61,10 @@ public class Block : MonoBehaviour
     {
         if (PickupEvent != null)
         {
-            transform.localScale = blockParam.blockNormalScale;
+            GetComponent<BlockLerp>().ToggleScale(false);
+            Transform parentObj = transform.parent;
+            transform.SetParent(parentObj.parent);
+            transform.SetParent(parentObj);
             PickupEvent();
             isDragged = true;
         }
@@ -78,7 +82,7 @@ public class Block : MonoBehaviour
                 if (!res)
                 {
                     EndPickupEvent(false);
-                    transform.localScale = blockParam.blockSmallScale;
+                    GetComponent<BlockLerp>().ToggleScale(true);
                     return;
                 }
             }
@@ -99,7 +103,7 @@ public class Block : MonoBehaviour
 
     public void Recall()
     {
-        transform.position = initPos;
+        GetComponent<BlockLerp>().SetPos(initPos);
     }    
 
     void FixedUpdate()

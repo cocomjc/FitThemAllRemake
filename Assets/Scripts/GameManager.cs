@@ -29,7 +29,8 @@ public class GameManager : MonoBehaviour
 
     private void LoadLevel()
     {
-        SceneManager.LoadScene("Level" + PlayerPrefs.GetInt("Level"), LoadSceneMode.Additive);
+        SceneManager.LoadScene(PlayerPrefs.GetInt("Level"), LoadSceneMode.Additive);
+        PlayerPrefs.SetString("LevelName", SceneManager.GetSceneAt(PlayerPrefs.GetInt("Level")).name);
         if (onGameStart != null)
         {
             onGameStart.RaiseEvent();
@@ -38,7 +39,7 @@ public class GameManager : MonoBehaviour
 
     public void LoadNextLevel()
     {
-        SceneManager.UnloadSceneAsync("Level" + PlayerPrefs.GetInt("Level"));
+        SceneManager.UnloadSceneAsync(PlayerPrefs.GetInt("Level"));
         PlayerPrefs.SetInt("Level", PlayerPrefs.GetInt("Level") + 1);
         LoadLevel();
     }    
