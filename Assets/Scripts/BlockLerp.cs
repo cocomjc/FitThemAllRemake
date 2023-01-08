@@ -46,5 +46,9 @@ public class BlockLerp : MonoBehaviour
         float tPos = currentPosLerpTime / posLerpTime;
         transform.position = Vector3.Lerp(transform.position, destination, tPos);
         posMoving = !(currentPosLerpTime == posLerpTime);
+        if (!posMoving)
+        {
+            GetComponent<BlockManager>().isReseting = false;
+        }
     }
 }

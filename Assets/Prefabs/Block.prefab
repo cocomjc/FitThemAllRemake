@@ -46,6 +46,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8403724625345996433}
   - component: {fileID: 8403724625345996438}
+  - component: {fileID: 4195820612066635040}
   - component: {fileID: 4573207047918658457}
   - component: {fileID: 5356804011710177835}
   - component: {fileID: 98258793277799026}
@@ -89,7 +90,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0ce3a71c31c53c42915a0ffc18ea65b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  piecePrefab: {fileID: 2283750448722149344, guid: a1012f77eb14efc46a482e0d82644734, type: 3}
+  initPos: {x: 0, y: 0}
   shape:
     gridSize: {x: 3, y: 3}
     cellSize: {x: 16, y: 16}
@@ -97,12 +98,25 @@ MonoBehaviour:
     - row: 010101
     - row: 000100
     - row: 000000
+  piecePrefab: {fileID: 2283750448722149344, guid: a1012f77eb14efc46a482e0d82644734, type: 3}
   blockColor: {r: 1, g: 0.43867922, b: 0.43867922, a: 1}
+  glowContainer: {fileID: 8600663435780822842}
   blockParam: {fileID: 11400000, guid: 0bbfb141794c91c43a7155e84dfa53fd, type: 2}
+--- !u!114 &4195820612066635040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8403724625345996432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caae45ff32988af459d14fb255d088c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   onGameReset: {fileID: 11400000, guid: c2a12561fbd4b1e498696a49800157de, type: 2}
   checkWin: {fileID: 11400000, guid: 6aa2a3a7c72a8884686b111ac026de92, type: 2}
   canFix: 
-  glowContainer: {fileID: 8600663435780822842}
 --- !u!114 &4573207047918658457
 MonoBehaviour:
   m_ObjectHideFlags: 0

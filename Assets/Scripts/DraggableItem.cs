@@ -7,32 +7,34 @@ using UnityEngine.EventSystems;
 public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
     [SerializeField] public Image mainImage;
-    [SerializeField] private Image glow;
+    [SerializeField] private GameObject glow;
     [HideInInspector] private GameObject blockParent = null;
     private GameObject freeSlot = null;
     private Vector2 initPos;
+    private BlockManager blockManager;
 
-
+    
     public void SetUpDraggable(GameObject _blockParent, Vector2 _initPos)
     {
         blockParent = _blockParent;
+        blockManager = blockParent.GetComponent<BlockManager>();
         initPos = _initPos;
-        blockParent.GetComponent<BlockSetUp>().PickupEvent += GroupToParentBlock;
-        blockParent.GetComponent<BlockSetUp>().CheckCanFix += CheckIfAnySlot;
-        blockParent.GetComponent<BlockSetUp>().EndPickupEvent += DropPiece;
-        blockParent.GetComponent<BlockSetUp>().TriggerGlow += Glow;
+        blockManager.PickupEvent += GroupToParentBlock;
+        blockManager.CheckCanFix += CheckIfAnySlot;
+        blockManager.EndPickupEvent += DropPiece;
+        blockManager.TriggerGlow += Glow;
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        blockParent.GetComponent<BlockSetUp>().TriggerPickUp();
+        blockManager.TriggerPickUp();
     }
 
     public void OnDrag(PointerEventData eventData) {}
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        blockParent.GetComponent<BlockSetUp>().EndPickUp();
+        blockManager.EndPickUp();
     }
 
     private void GroupToParentBlock()
@@ -49,10 +51,11 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
             transform.SetParent(freeSlot.transform);
         }
         else {
-            blockParent.GetComponent<BlockSetUp>().Recall();
+            blockManager.Recall();
             transform.localPosition = initPos;
         }
-        glow.enabled = false;
+        glow.transform.position = transform.position;
+        glow.GetComponent<Image>().enabled = false;
     }
 
     public void CheckIfAnySlot()
@@ -70,25 +73,26 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
                 if (result.gameObject.GetComponent<Slot>() != null && result.gameObject.GetComponent<Slot>().IsOccupied() == false)
                 {
                     freeSlot = result.gameObject;
-                    blockParent.GetComponent<BlockSetUp>().canFix.Add(true);
+                    blockManager.canFix.Add(true);
                     return;
                 }
             }
         };
-        blockParent.GetComponent<BlockSetUp>().canFix.Add(false);
+        blockManager.canFix.Add(false);
         return;
     }
 
     public void Glow(bool isGlowing)
     {
-        glow.enabled = true;
+        glow.transform.position = transform.position;
+        glow.GetComponent<Image>().enabled = true;
         if (isGlowing)
         {
-            glow.color = new Color(0.5f, 1f, 0.44f, .8f); ;
+            glow.GetComponent<Image>().color = new Color(0.5f, 1f, 0.44f, .8f); ;
         }
         else
         {
-            glow.color = new Color(0f, 0f, 0f, .8f); ;
+            glow.GetComponent<Image>().color = new Color(0f, 0f, 0f, .8f); ;
         }
     }
 }
