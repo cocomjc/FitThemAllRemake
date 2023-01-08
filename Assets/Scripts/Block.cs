@@ -15,19 +15,20 @@ public class Block : MonoBehaviour
     public event Action <bool> EndPickupEvent;
     public event Action CheckCanFix;
     public event Action<bool> TriggerGlow;
-    public VoidEvent OnGameReset;
+    public VoidEvent onGameReset;
+    public VoidEvent checkWin;
     private bool isDragged = false;
     [HideInInspector] public List<bool> canFix = new List<bool>();
     private Vector2 initPos;
 
     private void OnEnable()
     {
-        OnGameReset.OnEventRaised += ResetBlock;
+        onGameReset.OnEventRaised += ResetBlock;
     }
 
     private void OnDisable()
     {
-        OnGameReset.OnEventRaised -= ResetBlock;
+        onGameReset.OnEventRaised -= ResetBlock;
     }
 
     // Start is called before the first frame update
@@ -82,7 +83,10 @@ public class Block : MonoBehaviour
                 }
             }
             EndPickupEvent(true);
-
+            if (checkWin != null)
+            {
+                checkWin.RaiseEvent();
+            }
         }
     }
     

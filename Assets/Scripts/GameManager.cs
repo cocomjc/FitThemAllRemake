@@ -4,15 +4,26 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public VoidEvent onGameStart;
+    public VoidEvent onGameFinish;
+    [SerializeField] private bool resetPlayerPrefs = false;
+
+    public void OnEnable()
+    {
+        onGameFinish.OnEventRaised += LoadNextLevel;
+    }
+
+    public void OnDisable()
+    {
+        onGameFinish.OnEventRaised -= LoadNextLevel;
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        if (PlayerPrefs.GetInt("Level") == 0)
+        if (PlayerPrefs.GetInt("Level") == 0 || resetPlayerPrefs)
         {
             PlayerPrefs.SetInt("Level", 1);
         }
-
         LoadLevel();
     }
 

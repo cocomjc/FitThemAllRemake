@@ -60,7 +60,8 @@ MonoBehaviour:
     - row: 000100
     - row: 000000
   blockColor: {r: 1, g: 0.43867922, b: 0.43867922, a: 1}
-  OnGameReset: {fileID: 11400000, guid: c2a12561fbd4b1e498696a49800157de, type: 2}
+  onGameReset: {fileID: 11400000, guid: c2a12561fbd4b1e498696a49800157de, type: 2}
+  checkWin: {fileID: 11400000, guid: 6aa2a3a7c72a8884686b111ac026de92, type: 2}
   canFix: 
 --- !u!222 &5356804011710177835
 CanvasRenderer:
