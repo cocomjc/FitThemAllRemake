@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -5,16 +6,20 @@ public class GameManager : MonoBehaviour
 {
     public VoidEvent onGameStart;
     public VoidEvent onGameFinish;
+    public VoidEvent onGameNextLevel;
+    public StringEvent onShowUI;
     [SerializeField] private bool resetPlayerPrefs = false;
 
     public void OnEnable()
     {
-        onGameFinish.OnEventRaised += LoadNextLevel;
+        onGameFinish.OnEventRaised += LevelEnd;
+        onGameNextLevel.OnEventRaised += LoadNextLevel;
     }
 
     public void OnDisable()
     {
-        onGameFinish.OnEventRaised -= LoadNextLevel;
+        onGameFinish.OnEventRaised -= LevelEnd;
+        onGameNextLevel.OnEventRaised -= LoadNextLevel;
     }
 
     // Start is called before the first frame update
@@ -36,11 +41,23 @@ public class GameManager : MonoBehaviour
             onGameStart.RaiseEvent();
         }
     }
-
+    
+    private void LevelEnd()
+    {
+        if (onShowUI != null)
+        {
+            onShowUI.RaiseEvent("Win");
+        }
+    }
+    
     public void LoadNextLevel()
     {
         SceneManager.UnloadSceneAsync(PlayerPrefs.GetInt("Level"));
         PlayerPrefs.SetInt("Level", PlayerPrefs.GetInt("Level") + 1);
         LoadLevel();
+        if (onShowUI != null)
+        {
+            onShowUI.RaiseEvent("Home");
+        }
     }    
 }

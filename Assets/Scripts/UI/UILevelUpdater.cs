@@ -8,6 +8,7 @@ public class UILevelUpdater : MonoBehaviour
     private void OnEnable()
     {
         onGameStart.OnEventRaised += UpdateUi;
+        GetComponent<TextMeshProUGUI>().text = PlayerPrefs.GetString("LevelName");
     }
 
     private void OnDisable()

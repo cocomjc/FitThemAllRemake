@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class UIWinScreen : MonoBehaviour
 {
     public StringEvent onShowUI;
+    public VoidEvent onGameNextLevel;
     [SerializeField] private GameObject levelIndicator;
     [SerializeField] private GameObject topButtons;
 
@@ -51,5 +52,9 @@ public class UIWinScreen : MonoBehaviour
         }
         levelIndicator.SetActive(true);
         topButtons.SetActive(true);
+        if (onGameNextLevel != null)
+        {
+            onGameNextLevel.RaiseEvent();
+        }
     }
 }

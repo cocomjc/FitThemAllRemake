@@ -9,7 +9,7 @@ public class UIHomeButton : MonoBehaviour
     public void ShowMenu() {
         if (onShowUI != null)
         {
-            onShowUI.RaiseEvent("Win");
+            onShowUI.RaiseEvent("Home");
         }
     }
 }

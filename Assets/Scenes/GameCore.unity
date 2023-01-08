@@ -1217,6 +1217,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onGameStart: {fileID: 11400000, guid: dc6634689e93b274ab6bd84b608099eb, type: 2}
   onGameFinish: {fileID: 11400000, guid: e21e56f3cdde381478854ff51aef2d35, type: 2}
+  onGameNextLevel: {fileID: 11400000, guid: 50f2804bf729ce94686dd84fe82d42a6, type: 2}
+  onShowUI: {fileID: 11400000, guid: 9c12d51821efef04599215da8cc1cbac, type: 2}
   resetPlayerPrefs: 1
 --- !u!4 &1181435147
 Transform:
@@ -2018,6 +2020,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onShowUI: {fileID: 11400000, guid: 9c12d51821efef04599215da8cc1cbac, type: 2}
+  onGameNextLevel: {fileID: 11400000, guid: 50f2804bf729ce94686dd84fe82d42a6, type: 2}
   levelIndicator: {fileID: 2020001968}
   topButtons: {fileID: 168238183}
 --- !u!1 &2020001968
