@@ -1,7 +1,7 @@
 using UnityEngine;
 using TMPro;
 
-public class UiLevelUpdater : MonoBehaviour
+public class UILevelUpdater : MonoBehaviour
 {
     public VoidEvent onGameStart;
 

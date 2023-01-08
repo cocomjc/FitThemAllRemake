@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Array2DEditor;
@@ -11,6 +10,7 @@ public class Block : MonoBehaviour
     [SerializeField] private GameObject piecePrefab;
     [SerializeField] private Array2DBool shape;
     [SerializeField] private Color blockColor;
+    [SerializeField] private BlockParam blockParam;
     public event Action PickupEvent;
     public event Action <bool> EndPickupEvent;
     public event Action CheckCanFix;
@@ -53,14 +53,14 @@ public class Block : MonoBehaviour
                 }
             }
         }
-        transform.localScale = new Vector3(.4f, .4f, 1f);
+        transform.localScale = blockParam.blockSmallScale;
     }
 
     public void TriggerPickUp()
     {
         if (PickupEvent != null)
         {
-            transform.localScale = new Vector3(1f, 1f, 1f);
+            transform.localScale = blockParam.blockNormalScale;
             PickupEvent();
             isDragged = true;
         }
@@ -78,7 +78,7 @@ public class Block : MonoBehaviour
                 if (!res)
                 {
                     EndPickupEvent(false);
-                    transform.localScale = new Vector3(.4f, .4f, 1f);
+                    transform.localScale = blockParam.blockSmallScale;
                     return;
                 }
             }
