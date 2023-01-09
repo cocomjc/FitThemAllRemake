@@ -17,7 +17,7 @@ public class UIMuteButton : MonoBehaviour
     public void MuteToggle()
     {
         int muted = PlayerPrefs.GetInt("muted", 0);
-        GetComponent<ScalePulse>().StartPulse();
+        gameObject.GetComponent<Animator>().SetTrigger("Pulse");
         PlayerPrefs.SetInt("muted", muted == 1 ? 0 : 1);
         switch (muted)
         {

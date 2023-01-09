@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
     private void LoadLevel()
     {
         SceneManager.LoadScene(PlayerPrefs.GetInt("Level"), LoadSceneMode.Additive);
-        PlayerPrefs.SetString("LevelName", SceneManager.GetSceneAt(1).name);
+        PlayerPrefs.SetString("LevelName", SceneManager.GetSceneAt(PlayerPrefs.GetInt("Level")).name);
         if (onGameStart != null)
         {
             onGameStart.RaiseEvent();

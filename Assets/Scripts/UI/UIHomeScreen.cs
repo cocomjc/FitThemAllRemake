@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Drawing;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class UIHomeScreen : MonoBehaviour
 {
     public StringEvent onShowUI;
-    [SerializeField] private GameObject levelIndicator;
-    [SerializeField] private GameObject topButtons;
+    [SerializeField] private GameObject mainUI;
+    [SerializeField] private float fadeSpeed = .3f;
 
     public void OnEnable()
     {
@@ -21,35 +22,39 @@ public class UIHomeScreen : MonoBehaviour
 
     public void Start()
     {
-        GetComponent<Image>().enabled = false;
-        foreach (Transform child in transform)
-        {
-            child.gameObject.SetActive(false);
-        }
+        GetComponent<CanvasGroup>().alpha = 0;
+        GetComponent<CanvasGroup>().blocksRaycasts = false;
     }
 
     private void ShowMenu(string UIName)
     {
         if (UIName == "Home")
         {
-            GetComponent<Image>().enabled = true;
-            foreach (Transform child in transform)
-            {
-                child.gameObject.SetActive(true);
-            }
-            levelIndicator.SetActive(false);
-            topButtons.SetActive(false);
+            StartCoroutine(FadeCoroutine(true, fadeSpeed));
+            GetComponent<CanvasGroup>().blocksRaycasts = true;
         }
     }
 
     public void HideMenu()
     {
-        GetComponent<Image>().enabled = false;
-        foreach (Transform child in transform)
+        StartCoroutine(FadeCoroutine(false, fadeSpeed));
+        GetComponent<CanvasGroup>().blocksRaycasts = false;
+    }
+
+    private IEnumerator FadeCoroutine(bool fadeIn, float duration)
+    {
+        float elapsedTime = 0f;
+        while (elapsedTime < duration)
         {
-            child.gameObject.SetActive(false);
+            GetComponent<CanvasGroup>().alpha = fadeIn ? Mathf.Lerp(0f, 1f, elapsedTime / duration) : 1 - Mathf.Lerp(0f, 1f, elapsedTime / duration);
+            if (fadeIn && mainUI.GetComponent<CanvasGroup>().alpha != 0)
+                mainUI.GetComponent<CanvasGroup>().alpha = 1 - Mathf.Lerp(0f, 1f, elapsedTime / duration);
+            else if (!fadeIn)
+                mainUI.GetComponent<CanvasGroup>().alpha = Mathf.Lerp(0f, 1f, elapsedTime / duration);
+            elapsedTime += Time.deltaTime;
+            yield return null;
         }
-        levelIndicator.SetActive(true);
-        topButtons.SetActive(true);
+        GetComponent<CanvasGroup>().alpha = fadeIn ? 1f : 0f;
+        mainUI.GetComponent<CanvasGroup>().alpha = fadeIn ? 0f : 1f;
     }
 }
