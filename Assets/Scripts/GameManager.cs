@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public VoidEvent onGameNextLevel;
     public StringEvent onShowUI;
     [SerializeField] private bool resetPlayerPrefs = false;
+    [SerializeField] private int startAtLevel = 0;
 
     public void OnEnable()
     {
@@ -29,6 +30,10 @@ public class GameManager : MonoBehaviour
         if (PlayerPrefs.GetInt("Level") == 0 || resetPlayerPrefs)
         {
             PlayerPrefs.SetInt("Level", 1);
+        }
+        if (startAtLevel > 0)
+        {
+            PlayerPrefs.SetInt("Level", startAtLevel);
         }
         LoadLevel();
     }

@@ -103,6 +103,7 @@ MonoBehaviour:
   blockColor: {r: 1, g: 0.43867922, b: 0.43867922, a: 1}
   glowContainer: {fileID: 8600663435780822842}
   gameParam: {fileID: 11400000, guid: 0bbfb141794c91c43a7155e84dfa53fd, type: 2}
+  pieceSprite: {fileID: -866548673, guid: eb5e1f9d303e0cf479cb3973f92e0703, type: 3}
 --- !u!114 &4195820612066635040
 MonoBehaviour:
   m_ObjectHideFlags: 0
