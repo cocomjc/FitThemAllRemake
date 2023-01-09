@@ -8,12 +8,22 @@ public class ScalePulse : MonoBehaviour
     [SerializeField] private float maximum = 1.5f;
     [SerializeField] private float cyclesPerSecond = 2.0f;
     [SerializeField] private bool pulse = false;
+    [SerializeField] private bool oneShot = false;
+    [SerializeField] private bool startOnMax = true;
+    private int turns = 0;
     private float scale;
     private bool increasing = true;
 
     void Start()
     {
-        scale = maximum;
+        if (startOnMax)
+        {
+            scale = maximum;
+        }
+        else
+        {
+            scale = minimum;
+        }
     }
 
     void Update()
@@ -22,25 +32,30 @@ public class ScalePulse : MonoBehaviour
         {
             float t = Time.deltaTime;
 
-            if (scale >= maximum)
+            increasing = scale >= maximum ? false : increasing;
+            increasing = scale <= minimum ? true : increasing;
+            turns = (scale >= maximum && startOnMax) || (scale <= minimum && !startOnMax) ? turns + 1 : turns ;
+            if (oneShot && turns > 0)
             {
-                increasing = false;
+                StopPulse();
             }
-            if (scale <= minimum) increasing = true;
             scale = increasing ? scale += t * cyclesPerSecond : scale -= t * cyclesPerSecond;
             SetScale(scale);
-
         }
     }
 
     public void StartPulse()
     {
         pulse = true;
+        turns = 0;
     }
 
     public void StopPulse()
     {
-        SetScale(maximum);
+        if (startOnMax)
+            SetScale(maximum);
+        else
+            SetScale(minimum);
         pulse = false;
     }
 

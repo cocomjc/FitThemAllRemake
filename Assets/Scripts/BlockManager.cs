@@ -12,6 +12,7 @@ public class BlockManager : MonoBehaviour
     public event Action<bool> TriggerGlow;
     public VoidEvent onGameReset;
     public VoidEvent checkWin;
+    [SerializeField] private AudioClip []pickupSound;
     private bool isDragged = false;
     [HideInInspector] public bool isReseting = false;
     [HideInInspector] public List<bool> canFix = new List<bool>();
@@ -29,6 +30,8 @@ public class BlockManager : MonoBehaviour
     
     public void TriggerPickUp()
     {
+        if (!isReseting)
+            GetComponent<AudioSource>().PlayOneShot(pickupSound[0]);
         if (PickupEvent != null)
         {
             GetComponent<BlockLerp>().ToggleScale(false);
@@ -42,6 +45,8 @@ public class BlockManager : MonoBehaviour
 
     public void EndPickUp()
     {
+        if (!isReseting)
+            GetComponent<AudioSource>().PlayOneShot(pickupSound[1]);
         if (CheckCanFix != null && EndPickupEvent != null)
         {
             canFix.Clear();
@@ -66,6 +71,7 @@ public class BlockManager : MonoBehaviour
 
     private void ResetBlock()
     {
+        isReseting = true;
         TriggerPickUp();
         Recall();
         EndPickUp();
@@ -74,7 +80,6 @@ public class BlockManager : MonoBehaviour
     public void Recall()
     {
         GetComponent<BlockLerp>().SetPos(GetComponent<BlockSetUp>().initPos);
-        isReseting = true;
     }
 
     void FixedUpdate()

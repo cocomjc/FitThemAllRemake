@@ -33,6 +33,7 @@ public class UIWinScreen : MonoBehaviour
     {
         if (UIName == "Win")
         {
+            GetComponent<AudioSource>().Play();
             GetComponent<Image>().enabled = true;
             foreach (Transform child in transform)
             {
