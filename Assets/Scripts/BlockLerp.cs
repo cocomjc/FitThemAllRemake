@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BlockLerp : MonoBehaviour
 {
-    [SerializeField] private BlockParam blockParam;
+    [SerializeField] private GameParam gameParam;
     [SerializeField] private float scaleLerpTime = .2f;
     [SerializeField] private float posLerpTime = .2f;
     private bool isScaleDecreasing = true;
@@ -34,7 +34,7 @@ public class BlockLerp : MonoBehaviour
             currentScaleLerpTime = scaleLerpTime;
         }
         float tScale = currentScaleLerpTime / scaleLerpTime;
-        transform.localScale = Vector3.Lerp(isScaleDecreasing ? blockParam.blockNormalScale : blockParam.blockSmallScale, isScaleDecreasing ? blockParam.blockSmallScale : blockParam.blockNormalScale, tScale);
+        transform.localScale = Vector3.Lerp(isScaleDecreasing ? gameParam.blockNormalScale : gameParam.blockSmallScale, isScaleDecreasing ? gameParam.blockSmallScale : gameParam.blockNormalScale, tScale);
 
         // Position Lerp
         if (!posMoving) return;

@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "22241FDEE002B5",
         "name": "com.DefaultCompany.com.unity.template.mobile2D",
-        "processId": 29341,
+        "processId": 30825,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -11,73 +11,37 @@
         {
             "deviceId": "22241FDEE002B5",
             "name": "com.DefaultCompany.com.unity.template.mobile2D",
-            "processId": 30120,
-            "exited": false
-        },
-        {
-            "deviceId": "22241FDEE002B5",
-            "name": "com.DefaultCompany.com.unity.template.mobile2D",
-            "processId": 32492,
-            "exited": false
-        },
-        {
-            "deviceId": "22241FDEE002B5",
-            "name": "com.DefaultCompany.com.unity.template.mobile2D",
-            "processId": 2378,
-            "exited": false
-        },
-        {
-            "deviceId": "22241FDEE002B5",
-            "name": "com.DefaultCompany.com.unity.template.mobile2D",
-            "processId": 9596,
-            "exited": false
-        },
-        {
-            "deviceId": "22241FDEE002B5",
-            "name": "com.DefaultCompany.com.unity.template.mobile2D",
-            "processId": 11806,
-            "exited": false
-        },
-        {
-            "deviceId": "22241FDEE002B5",
-            "name": "com.DefaultCompany.com.unity.template.mobile2D",
-            "processId": 20059,
-            "exited": false
-        },
-        {
-            "deviceId": "22241FDEE002B5",
-            "name": "com.DefaultCompany.com.unity.template.mobile2D",
-            "processId": 1686,
-            "exited": false
-        },
-        {
-            "deviceId": "22241FDEE002B5",
-            "name": "com.DefaultCompany.com.unity.template.mobile2D",
-            "processId": 3341,
-            "exited": false
-        },
-        {
-            "deviceId": "22241FDEE002B5",
-            "name": "com.DefaultCompany.com.unity.template.mobile2D",
-            "processId": 4476,
-            "exited": false
-        },
-        {
-            "deviceId": "22241FDEE002B5",
-            "name": "com.DefaultCompany.com.unity.template.mobile2D",
-            "processId": 18203,
-            "exited": false
-        },
-        {
-            "deviceId": "22241FDEE002B5",
-            "name": "com.DefaultCompany.com.unity.template.mobile2D",
-            "processId": 27698,
-            "exited": false
-        },
-        {
-            "deviceId": "22241FDEE002B5",
-            "name": "com.DefaultCompany.com.unity.template.mobile2D",
             "processId": 29341,
+            "exited": true
+        },
+        {
+            "deviceId": "22241FDEE002B5",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 27352,
+            "exited": true
+        },
+        {
+            "deviceId": "22241FDEE002B5",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 4182,
+            "exited": true
+        },
+        {
+            "deviceId": "22241FDEE002B5",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 5707,
+            "exited": true
+        },
+        {
+            "deviceId": "22241FDEE002B5",
+            "name": "com.snapchat.android",
+            "processId": 3235,
+            "exited": false
+        },
+        {
+            "deviceId": "22241FDEE002B5",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 30825,
             "exited": false
         }
     ],

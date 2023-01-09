@@ -13,7 +13,7 @@ public class BlockSetUp : MonoBehaviour
     [SerializeField] private GameObject piecePrefab;
     [SerializeField] private Color blockColor;
     [SerializeField] private Transform glowContainer;
-    [SerializeField] private BlockParam blockParam;
+    [SerializeField] private GameParam gameParam;
 
     void Start()
     {
@@ -29,9 +29,9 @@ public class BlockSetUp : MonoBehaviour
                 {
                     newPiece = Instantiate(piecePrefab, new Vector3(0, 0, 0), Quaternion.identity);
                     newPiece.transform.SetParent(transform);
-                    newPiece.GetComponent<DraggableItem>().SetUpDraggable(gameObject, new Vector3(j * 100, -i * 100, 0));
+                    newPiece.GetComponent<DraggableItem>().SetUpDraggable(gameObject, new Vector3(j * gameParam.piecesSize.y, -i * gameParam.piecesSize.x, 0));
                     newPiece.GetComponent<DraggableItem>().mainImage.color = blockColor;
-                    newPiece.transform.localPosition = new Vector3(j*100, -i*100, 0);
+                    newPiece.transform.localPosition = new Vector3(j* gameParam.piecesSize.y, -i* gameParam.piecesSize.x, 0);
                     newPiece.transform.localScale = new Vector3(1, 1, 1);
                     foreach (Transform child in newPiece.transform)
                     {
@@ -43,6 +43,6 @@ public class BlockSetUp : MonoBehaviour
                 }
             }
         }
-        transform.localScale = blockParam.blockSmallScale;
+        transform.localScale = gameParam.blockSmallScale;
     }
 }

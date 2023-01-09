@@ -8,6 +8,7 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 {
     [SerializeField] public Image mainImage;
     [SerializeField] private GameObject glow;
+    [SerializeField] private GameParam gameParam;
     [HideInInspector] private GameObject blockParent = null;
     private GameObject freeSlot = null;
     private Vector2 initPos;
@@ -19,10 +20,22 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         blockParent = _blockParent;
         blockManager = blockParent.GetComponent<BlockManager>();
         initPos = _initPos;
+
+        GetComponent<RectTransform>().sizeDelta = gameParam.piecesSize;
+
+        //Sub to events
         blockManager.PickupEvent += GroupToParentBlock;
         blockManager.CheckCanFix += CheckIfAnySlot;
         blockManager.EndPickupEvent += DropPiece;
         blockManager.TriggerGlow += Glow;
+    }
+
+    public void OnDisable()
+    {
+        blockManager.PickupEvent -= GroupToParentBlock;
+        blockManager.CheckCanFix -= CheckIfAnySlot;
+        blockManager.EndPickupEvent -= DropPiece;
+        blockManager.TriggerGlow -= Glow;
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -88,11 +101,11 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         glow.GetComponent<Image>().enabled = true;
         if (isGlowing)
         {
-            glow.GetComponent<Image>().color = new Color(0.5f, 1f, 0.44f, .8f); ;
+            glow.GetComponent<Image>().color = new Color(0.5f, 1f, 0.44f, .8f);
         }
         else
         {
-            glow.GetComponent<Image>().color = new Color(0f, 0f, 0f, .8f); ;
+            glow.GetComponent<Image>().color = new Color(0f, 0f, 0f, .6f);
         }
     }
 }

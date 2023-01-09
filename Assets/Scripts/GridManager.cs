@@ -1,13 +1,17 @@
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class GridManager : MonoBehaviour
 {
     public VoidEvent onGameFinish;
     public VoidEvent checkWin;
+    [SerializeField] private GameParam gameParam;
 
     public void OnEnable()
     {
+        Debug.Log("GridManager OnEnable set size to" + GetComponent<GridLayoutGroup>().cellSize);
+        gameParam.piecesSize = GetComponent<GridLayoutGroup>().cellSize;
         checkWin.OnEventRaised += CheckWin;
     }
 
