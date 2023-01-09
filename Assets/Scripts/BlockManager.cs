@@ -84,7 +84,7 @@ public class BlockManager : MonoBehaviour
     {
         if (isDragged)
         {
-            transform.position = Input.mousePosition - new Vector3(GetComponent<BlockSetUp>().shape.GetCells().GetLength(0) * 50, -GetComponent<BlockSetUp>().shape.GetCells().GetLength(1) * 50, 0);
+            transform.position = Input.mousePosition;// - new Vector3(GetComponent<BlockSetUp>().shape.GetCells().GetLength(0) * 50, -GetComponent<BlockSetUp>().shape.GetCells().GetLength(1) * 50, 0);
 
             if (TriggerGlow != null)
             {
