@@ -888,7 +888,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8403724625345996433, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -396
+      value: -455
       objectReference: {fileID: 0}
     - target: {fileID: 8403724625345996433, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1054,7 +1054,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8403724625345996433, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -396
+      value: -476
       objectReference: {fileID: 0}
     - target: {fileID: 8403724625345996433, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1158,6 +1158,7 @@ GameObject:
   - component: {fileID: 1179981215}
   - component: {fileID: 1179981217}
   - component: {fileID: 1179981216}
+  - component: {fileID: 1179981218}
   m_Layer: 5
   m_Name: Game
   m_TagString: Untagged
@@ -1225,6 +1226,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1179981214}
   m_CullTransparentMesh: 1
+--- !u!114 &1179981218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179981214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c75e2d31fc606e242a598760639c1d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameParam: {fileID: 11400000, guid: 0bbfb141794c91c43a7155e84dfa53fd, type: 2}
 --- !u!1 &1573965938
 GameObject:
   m_ObjectHideFlags: 0

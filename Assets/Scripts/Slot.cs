@@ -6,10 +6,11 @@ using UnityEngine.UI;
 
 public class Slot : MonoBehaviour
 {
-    [SerializeField] private GameParam gameParam;
+    private GameParam gameParam;
 
     private void Start()
     {
+        gameParam = FindObjectOfType<GameParamHandler>().gameParam;
         GetComponent<GridLayoutGroup>().cellSize = gameParam.piecesSize;
     }
 

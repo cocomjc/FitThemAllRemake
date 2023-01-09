@@ -218,6 +218,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 857493920, guid: 21ccd058c78f0c24fb50e749db1ef9d5, type: 3}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (22)
@@ -400,6 +404,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1874013670, guid: 21ccd058c78f0c24fb50e749db1ef9d5, type: 3}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (33)
@@ -760,6 +768,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 2056285207, guid: 21ccd058c78f0c24fb50e749db1ef9d5, type: 3}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (36)
@@ -1304,6 +1316,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2080475588}
     m_Modifications:
+    - target: {fileID: 4573207047918658457, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8403724625345996432, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
       propertyPath: m_Name
       value: Block (1)
@@ -1374,11 +1390,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8403724625345996433, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -49.999985
+      value: -53.000015
       objectReference: {fileID: 0}
     - target: {fileID: 8403724625345996433, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -467
+      value: -513
       objectReference: {fileID: 0}
     - target: {fileID: 8403724625345996433, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1396,6 +1412,10 @@ PrefabInstance:
       propertyPath: checkWin
       value: 
       objectReference: {fileID: 11400000, guid: 6aa2a3a7c72a8884686b111ac026de92, type: 2}
+    - target: {fileID: 8403724625345996438, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8403724625345996438, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
       propertyPath: onGameReset
       value: 
@@ -1562,6 +1582,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1292681025, guid: 21ccd058c78f0c24fb50e749db1ef9d5, type: 3}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (34)
@@ -1744,6 +1768,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1291353661, guid: 21ccd058c78f0c24fb50e749db1ef9d5, type: 3}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (1)
@@ -1762,6 +1790,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2080475588}
     m_Modifications:
+    - target: {fileID: 4573207047918658457, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8403724625345996432, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
       propertyPath: m_Name
       value: Block (7)
@@ -1832,7 +1864,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8403724625345996433, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -49.99998
+      value: -30.999996
       objectReference: {fileID: 0}
     - target: {fileID: 8403724625345996433, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1854,6 +1886,10 @@ PrefabInstance:
       propertyPath: checkWin
       value: 
       objectReference: {fileID: 11400000, guid: 6aa2a3a7c72a8884686b111ac026de92, type: 2}
+    - target: {fileID: 8403724625345996438, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8403724625345996438, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
       propertyPath: onGameReset
       value: 
@@ -2142,6 +2178,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1589174021, guid: 21ccd058c78f0c24fb50e749db1ef9d5, type: 3}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot
@@ -2350,6 +2390,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1585323284, guid: 21ccd058c78f0c24fb50e749db1ef9d5, type: 3}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (20)
@@ -2456,6 +2500,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1066786503, guid: 21ccd058c78f0c24fb50e749db1ef9d5, type: 3}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (31)
@@ -2562,6 +2610,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1614409111, guid: 21ccd058c78f0c24fb50e749db1ef9d5, type: 3}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (26)
@@ -2580,6 +2632,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2080475588}
     m_Modifications:
+    - target: {fileID: 4573207047918658457, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8403724625345996432, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
       propertyPath: m_Name
       value: Block (4)
@@ -2650,11 +2706,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8403724625345996433, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -49.999985
+      value: -31
       objectReference: {fileID: 0}
     - target: {fileID: 8403724625345996433, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -714
+      value: -689
       objectReference: {fileID: 0}
     - target: {fileID: 8403724625345996433, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2672,6 +2728,10 @@ PrefabInstance:
       propertyPath: checkWin
       value: 
       objectReference: {fileID: 11400000, guid: 6aa2a3a7c72a8884686b111ac026de92, type: 2}
+    - target: {fileID: 8403724625345996438, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8403724625345996438, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
       propertyPath: onGameReset
       value: 
@@ -2858,6 +2918,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -179562692, guid: 21ccd058c78f0c24fb50e749db1ef9d5, type: 3}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (8)
@@ -2964,6 +3028,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1238177697, guid: 21ccd058c78f0c24fb50e749db1ef9d5, type: 3}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (41)
@@ -3172,6 +3240,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 512930458, guid: 21ccd058c78f0c24fb50e749db1ef9d5, type: 3}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (15)
@@ -3405,6 +3477,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2080475588}
     m_Modifications:
+    - target: {fileID: 4573207047918658457, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8403724625345996432, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
       propertyPath: m_Name
       value: Block (3)
@@ -3475,7 +3551,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8403724625345996433, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -298
+      value: -279
       objectReference: {fileID: 0}
     - target: {fileID: 8403724625345996433, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -3497,6 +3573,10 @@ PrefabInstance:
       propertyPath: checkWin
       value: 
       objectReference: {fileID: 11400000, guid: 6aa2a3a7c72a8884686b111ac026de92, type: 2}
+    - target: {fileID: 8403724625345996438, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8403724625345996438, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
       propertyPath: onGameReset
       value: 
@@ -3849,6 +3929,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 341382492, guid: 21ccd058c78f0c24fb50e749db1ef9d5, type: 3}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (35)
@@ -3959,6 +4043,10 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (6)
@@ -4395,6 +4483,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 476287878, guid: 21ccd058c78f0c24fb50e749db1ef9d5, type: 3}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (39)
@@ -4617,6 +4709,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2080475588}
     m_Modifications:
+    - target: {fileID: 4573207047918658457, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8403724625345996432, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
       propertyPath: m_Name
       value: Block (5)
@@ -4687,7 +4783,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8403724625345996433, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 191.00002
+      value: 210
       objectReference: {fileID: 0}
     - target: {fileID: 8403724625345996433, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -4709,6 +4805,10 @@ PrefabInstance:
       propertyPath: checkWin
       value: 
       objectReference: {fileID: 11400000, guid: 6aa2a3a7c72a8884686b111ac026de92, type: 2}
+    - target: {fileID: 8403724625345996438, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8403724625345996438, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
       propertyPath: onGameReset
       value: 
@@ -4963,6 +5063,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1947455797, guid: 21ccd058c78f0c24fb50e749db1ef9d5, type: 3}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (37)
@@ -5883,6 +5987,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -493558300, guid: 21ccd058c78f0c24fb50e749db1ef9d5, type: 3}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (16)
@@ -6003,6 +6111,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2080475588}
     m_Modifications:
+    - target: {fileID: 4573207047918658457, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8403724625345996432, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
       propertyPath: m_Name
       value: Block (2)
@@ -6073,11 +6185,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8403724625345996433, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 191
+      value: 209.99998
       objectReference: {fileID: 0}
     - target: {fileID: 8403724625345996433, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -467
+      value: -492
       objectReference: {fileID: 0}
     - target: {fileID: 8403724625345996433, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6095,6 +6207,10 @@ PrefabInstance:
       propertyPath: checkWin
       value: 
       objectReference: {fileID: 11400000, guid: 6aa2a3a7c72a8884686b111ac026de92, type: 2}
+    - target: {fileID: 8403724625345996438, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8403724625345996438, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
       propertyPath: onGameReset
       value: 
@@ -6477,6 +6593,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 666215289, guid: 21ccd058c78f0c24fb50e749db1ef9d5, type: 3}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (2)
@@ -6673,6 +6793,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2080475588}
     m_Modifications:
+    - target: {fileID: 4573207047918658457, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8403724625345996432, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
       propertyPath: m_Name
       value: Block
@@ -6743,7 +6867,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8403724625345996433, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -298
+      value: -279
       objectReference: {fileID: 0}
     - target: {fileID: 8403724625345996433, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -6765,6 +6889,10 @@ PrefabInstance:
       propertyPath: checkWin
       value: 
       objectReference: {fileID: 11400000, guid: 6aa2a3a7c72a8884686b111ac026de92, type: 2}
+    - target: {fileID: 8403724625345996438, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8403724625345996438, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
       propertyPath: onGameReset
       value: 
@@ -7434,6 +7562,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1078223597, guid: 21ccd058c78f0c24fb50e749db1ef9d5, type: 3}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (29)
@@ -7768,6 +7900,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 670904107, guid: 21ccd058c78f0c24fb50e749db1ef9d5, type: 3}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (25)
@@ -8052,6 +8188,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1881710255, guid: 21ccd058c78f0c24fb50e749db1ef9d5, type: 3}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (23)
@@ -8158,6 +8298,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -237421998, guid: 21ccd058c78f0c24fb50e749db1ef9d5, type: 3}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (42)
@@ -8759,6 +8903,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -221732747, guid: 21ccd058c78f0c24fb50e749db1ef9d5, type: 3}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (32)
@@ -8883,6 +9031,7 @@ GameObject:
   - component: {fileID: 1179981215}
   - component: {fileID: 1179981217}
   - component: {fileID: 1179981216}
+  - component: {fileID: 1179981218}
   m_Layer: 5
   m_Name: Game
   m_TagString: Untagged
@@ -8951,6 +9100,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1179981214}
   m_CullTransparentMesh: 1
+--- !u!114 &1179981218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179981214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c75e2d31fc606e242a598760639c1d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameParam: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
 --- !u!1001 &1190986134
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9046,6 +9208,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 2062880592, guid: 21ccd058c78f0c24fb50e749db1ef9d5, type: 3}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (40)
@@ -9228,6 +9394,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 195247290, guid: 21ccd058c78f0c24fb50e749db1ef9d5, type: 3}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (17)
@@ -9613,6 +9783,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -404079653, guid: 21ccd058c78f0c24fb50e749db1ef9d5, type: 3}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (14)
@@ -9723,6 +9897,10 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (13)
@@ -10439,6 +10617,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1297937170, guid: 21ccd058c78f0c24fb50e749db1ef9d5, type: 3}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (38)
@@ -11082,6 +11264,10 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (47)
@@ -11188,6 +11374,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1987964577, guid: 21ccd058c78f0c24fb50e749db1ef9d5, type: 3}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (12)
@@ -11294,6 +11484,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -35522542, guid: 21ccd058c78f0c24fb50e749db1ef9d5, type: 3}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (9)
@@ -11400,6 +11594,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1538572166, guid: 21ccd058c78f0c24fb50e749db1ef9d5, type: 3}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (27)
@@ -11988,6 +12186,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1906779557, guid: 21ccd058c78f0c24fb50e749db1ef9d5, type: 3}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (11)
@@ -12196,6 +12398,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -95530356, guid: 21ccd058c78f0c24fb50e749db1ef9d5, type: 3}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (21)
@@ -12734,6 +12940,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1088673271, guid: 21ccd058c78f0c24fb50e749db1ef9d5, type: 3}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (7)
@@ -12942,6 +13152,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1873409721, guid: 21ccd058c78f0c24fb50e749db1ef9d5, type: 3}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (19)
@@ -12960,6 +13174,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2080475588}
     m_Modifications:
+    - target: {fileID: 4573207047918658457, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8403724625345996432, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
       propertyPath: m_Name
       value: Block (6)
@@ -13030,7 +13248,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8403724625345996433, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -298
+      value: -279
       objectReference: {fileID: 0}
     - target: {fileID: 8403724625345996433, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -13052,6 +13270,10 @@ PrefabInstance:
       propertyPath: checkWin
       value: 
       objectReference: {fileID: 11400000, guid: 6aa2a3a7c72a8884686b111ac026de92, type: 2}
+    - target: {fileID: 8403724625345996438, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8403724625345996438, guid: cf8ad00d6d51ceb409f1426e2e117611, type: 3}
       propertyPath: onGameReset
       value: 
@@ -13586,6 +13808,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 832879032, guid: 21ccd058c78f0c24fb50e749db1ef9d5, type: 3}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (24)
@@ -13692,6 +13918,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 939782762, guid: 21ccd058c78f0c24fb50e749db1ef9d5, type: 3}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (30)
@@ -13798,6 +14028,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -724714052, guid: 21ccd058c78f0c24fb50e749db1ef9d5, type: 3}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (4)
@@ -14006,6 +14240,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1352824268, guid: 21ccd058c78f0c24fb50e749db1ef9d5, type: 3}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (5)
@@ -14264,6 +14502,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1800343119, guid: 21ccd058c78f0c24fb50e749db1ef9d5, type: 3}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (10)
@@ -14374,6 +14616,10 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (46)
@@ -14652,7 +14898,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onGameFinish: {fileID: 11400000, guid: e21e56f3cdde381478854ff51aef2d35, type: 2}
   checkWin: {fileID: 11400000, guid: 6aa2a3a7c72a8884686b111ac026de92, type: 2}
-  gameParam: {fileID: 11400000, guid: 0bbfb141794c91c43a7155e84dfa53fd, type: 2}
+  gameParam: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
 --- !u!1 &1902054523
 GameObject:
   m_ObjectHideFlags: 0
@@ -14824,6 +15070,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -940569620, guid: 21ccd058c78f0c24fb50e749db1ef9d5, type: 3}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (28)
@@ -15108,6 +15358,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -126098222, guid: 21ccd058c78f0c24fb50e749db1ef9d5, type: 3}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (3)
@@ -15366,6 +15620,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -583558943, guid: 21ccd058c78f0c24fb50e749db1ef9d5, type: 3}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (44)
@@ -15476,6 +15734,10 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (48)
@@ -15683,6 +15945,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1692760722, guid: 21ccd058c78f0c24fb50e749db1ef9d5, type: 3}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (18)
@@ -16041,6 +16307,10 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (45)
@@ -16147,6 +16417,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 889440855, guid: 21ccd058c78f0c24fb50e749db1ef9d5, type: 3}
+    - target: {fileID: 3656161357089342172, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
+      propertyPath: gameParam
+      value: 
+      objectReference: {fileID: 11400000, guid: e7c2dd7a3b65fa947ab7c26b2a4331da, type: 2}
     - target: {fileID: 8424367568863005800, guid: e0da7a95d9ec82741a93dc0a2c06f400, type: 3}
       propertyPath: m_Name
       value: Slot (43)

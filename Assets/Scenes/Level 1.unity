@@ -699,6 +699,7 @@ GameObject:
   - component: {fileID: 1179981215}
   - component: {fileID: 1179981217}
   - component: {fileID: 1179981216}
+  - component: {fileID: 1179981218}
   m_Layer: 5
   m_Name: Game
   m_TagString: Untagged
@@ -766,6 +767,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1179981214}
   m_CullTransparentMesh: 1
+--- !u!114 &1179981218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179981214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c75e2d31fc606e242a598760639c1d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameParam: {fileID: 11400000, guid: 0bbfb141794c91c43a7155e84dfa53fd, type: 2}
 --- !u!1 &1573965938
 GameObject:
   m_ObjectHideFlags: 0
@@ -962,7 +976,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onGameFinish: {fileID: 11400000, guid: e21e56f3cdde381478854ff51aef2d35, type: 2}
   checkWin: {fileID: 11400000, guid: 6aa2a3a7c72a8884686b111ac026de92, type: 2}
-  onUpdateLevelName: {fileID: 11400000, guid: c0e2c91448c744b40abf24542216bc50, type: 2}
   gameParam: {fileID: 11400000, guid: 0bbfb141794c91c43a7155e84dfa53fd, type: 2}
 --- !u!1001 &1934861234
 PrefabInstance:

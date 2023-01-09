@@ -6,10 +6,11 @@ public class GridManager : MonoBehaviour
 {
     public VoidEvent onGameFinish;
     public VoidEvent checkWin;
-    [SerializeField] private GameParam gameParam;
+    public GameParam gameParam;
 
     public void OnEnable()
     {
+        gameParam = FindObjectOfType<GameParamHandler>().gameParam;
         gameParam.piecesSize = GetComponent<GridLayoutGroup>().cellSize;
         checkWin.OnEventRaised += CheckWin;
     }

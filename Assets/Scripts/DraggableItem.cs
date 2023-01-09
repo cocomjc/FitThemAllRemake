@@ -8,8 +8,8 @@ public class DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 {
     [SerializeField] public Image mainImage;
     [SerializeField] private GameObject glow;
-    [SerializeField] private GameParam gameParam;
     [HideInInspector] private GameObject blockParent = null;
+    [HideInInspector] public GameParam gameParam;
     private GameObject freeSlot = null;
     private Vector2 initPos;
     private BlockManager blockManager;

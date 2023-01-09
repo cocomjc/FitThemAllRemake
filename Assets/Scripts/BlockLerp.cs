@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BlockLerp : MonoBehaviour
 {
-    [SerializeField] private GameParam gameParam;
+    private GameParam gameParam;
     [SerializeField] private float scaleLerpTime = .2f;
     [SerializeField] private float posLerpTime = .2f;
     private bool isScaleDecreasing = true;
@@ -12,6 +12,11 @@ public class BlockLerp : MonoBehaviour
     private bool posMoving = false;
     private Vector2 destination;
     private float currentPosLerpTime;
+
+    private void Start()
+    {
+        gameParam = GetComponent<BlockSetUp>().gameParam;
+    }
 
     public void ToggleScale(bool isDecreasing)
     {

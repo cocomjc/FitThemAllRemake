@@ -14,6 +14,7 @@ public class BlockManager : MonoBehaviour
     public VoidEvent checkWin;
     [SerializeField] private AudioClip []pickupSound;
     private bool isDragged = false;
+    private Vector2 localOffset;
     [HideInInspector] public bool isReseting = false;
     [HideInInspector] public List<bool> canFix = new List<bool>();
 
@@ -34,6 +35,9 @@ public class BlockManager : MonoBehaviour
             GetComponent<AudioSource>().PlayOneShot(pickupSound[0]);
         if (PickupEvent != null)
         {
+            localOffset = GetComponent<RectTransform>().InverseTransformPoint(Input.mousePosition);
+            Debug.Log("Local position: " + localOffset);
+
             GetComponent<BlockLerp>().ToggleScale(false);
             transform.SetAsLastSibling();
             PickupEvent();
@@ -84,7 +88,7 @@ public class BlockManager : MonoBehaviour
     {
         if (isDragged)
         {
-            transform.position = Input.mousePosition;// - new Vector3(GetComponent<BlockSetUp>().shape.GetCells().GetLength(0) * 50, -GetComponent<BlockSetUp>().shape.GetCells().GetLength(1) * 50, 0);
+            transform.position = Input.mousePosition - new Vector3(localOffset.x, localOffset.y, 0);
 
             if (TriggerGlow != null)
             {

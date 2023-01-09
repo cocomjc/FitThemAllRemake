@@ -1,10 +1,6 @@
-using System.Collections.Generic;
 using UnityEngine;
 using Array2DEditor;
-using System;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
-using static UnityEngine.GraphicsBuffer;
 
 public class BlockSetUp : MonoBehaviour
 {
@@ -13,11 +9,12 @@ public class BlockSetUp : MonoBehaviour
     [SerializeField] private GameObject piecePrefab;
     [SerializeField] private Color blockColor;
     [SerializeField] private Transform glowContainer;
-    [SerializeField] private GameParam gameParam;
+    public GameParam gameParam;
     [SerializeField] private Sprite pieceSprite;
 
     void Start()
     {
+        gameParam = FindObjectOfType<GameParamHandler>().gameParam;
         initPos = transform.position;
         GetComponent<Image>().enabled = false;
         GameObject newPiece;
@@ -30,6 +27,7 @@ public class BlockSetUp : MonoBehaviour
                 {
                     newPiece = Instantiate(piecePrefab, new Vector3(0, 0, 0), Quaternion.identity);
                     newPiece.transform.SetParent(transform);
+                    newPiece.GetComponent<DraggableItem>().gameParam = gameParam;
                     newPiece.GetComponent<DraggableItem>().SetUpDraggable(gameObject, new Vector3(j * gameParam.piecesSize.y, -i * gameParam.piecesSize.x, 0));
                     newPiece.GetComponent<DraggableItem>().mainImage.sprite = pieceSprite;
                     newPiece.GetComponent<DraggableItem>().mainImage.color = blockColor;
