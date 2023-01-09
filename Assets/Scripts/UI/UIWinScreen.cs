@@ -9,6 +9,8 @@ public class UIWinScreen : MonoBehaviour
     public VoidEvent onGameNextLevel;
     [SerializeField] private GameObject mainUI;
     [SerializeField] private float fadeSpeed = .3f;
+    [SerializeField] private GameObject emoji;
+    [SerializeField] private Sprite[] emojiSprites;
 
     public void OnEnable()
     {
@@ -24,6 +26,7 @@ public class UIWinScreen : MonoBehaviour
     {
         GetComponent<CanvasGroup>().alpha = 0;
         GetComponent<CanvasGroup>().blocksRaycasts = false;
+        emoji.SetActive(false);
     }
 
     private void ShowMenu(string UIName)
@@ -33,6 +36,8 @@ public class UIWinScreen : MonoBehaviour
             GetComponent<AudioSource>().Play();
             StartCoroutine(FadeCoroutine(true, fadeSpeed));
             GetComponent<CanvasGroup>().blocksRaycasts = true;
+            emoji.SetActive(true);
+            emoji.GetComponent<Image>().sprite = emojiSprites[Random.Range(0, emojiSprites.Length)];
         }
     }
 
@@ -40,6 +45,7 @@ public class UIWinScreen : MonoBehaviour
     {
         StartCoroutine(FadeCoroutine(false, fadeSpeed));
         GetComponent<CanvasGroup>().blocksRaycasts = false;
+        emoji.SetActive(false);
         if (onGameNextLevel != null)
         {
             onGameNextLevel.RaiseEvent();
