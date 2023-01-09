@@ -59,7 +59,8 @@ public class GameManager : MonoBehaviour
     public void LoadNextLevel()
     {
         SceneManager.UnloadSceneAsync(PlayerPrefs.GetInt("Level"));
-        PlayerPrefs.SetInt("Level", PlayerPrefs.GetInt("Level") + 1);
+        if (PlayerPrefs.GetInt("Level") < SceneManager.sceneCountInBuildSettings - 1)
+            PlayerPrefs.SetInt("Level", PlayerPrefs.GetInt("Level") + 1);
         LoadLevel();
         if (onShowUI != null)
         {

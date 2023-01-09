@@ -10,7 +10,6 @@ public class GridManager : MonoBehaviour
 
     public void OnEnable()
     {
-        Debug.Log("GridManager OnEnable set size to" + GetComponent<GridLayoutGroup>().cellSize);
         gameParam.piecesSize = GetComponent<GridLayoutGroup>().cellSize;
         checkWin.OnEventRaised += CheckWin;
     }
