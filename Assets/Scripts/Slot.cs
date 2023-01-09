@@ -8,7 +8,7 @@ public class Slot : MonoBehaviour
 {
     [SerializeField] private GameParam gameParam;
 
-    private void OnEnable()
+    private void Start()
     {
         GetComponent<GridLayoutGroup>().cellSize = gameParam.piecesSize;
     }

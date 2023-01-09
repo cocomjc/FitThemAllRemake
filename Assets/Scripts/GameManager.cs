@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -35,13 +36,13 @@ public class GameManager : MonoBehaviour
     private void LoadLevel()
     {
         SceneManager.LoadScene(PlayerPrefs.GetInt("Level"), LoadSceneMode.Additive);
-        PlayerPrefs.SetString("LevelName", SceneManager.GetSceneAt(PlayerPrefs.GetInt("Level")).name);
+        PlayerPrefs.SetString("LevelName", SceneManager.GetSceneByBuildIndex(PlayerPrefs.GetInt("Level")).name);
         if (onGameStart != null)
         {
             onGameStart.RaiseEvent();
         }
     }
-    
+
     private void LevelEnd()
     {
         if (onShowUI != null)

@@ -35,9 +35,7 @@ public class BlockManager : MonoBehaviour
         if (PickupEvent != null)
         {
             GetComponent<BlockLerp>().ToggleScale(false);
-            Transform parentObj = transform.parent;
-            transform.SetParent(parentObj.parent);
-            transform.SetParent(parentObj);
+            transform.SetAsLastSibling();
             PickupEvent();
             isDragged = true;
         }

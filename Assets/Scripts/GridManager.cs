@@ -19,7 +19,7 @@ public class GridManager : MonoBehaviour
     {
         checkWin.OnEventRaised -= CheckWin;
     }
-    
+
     private void CheckWin()
     {
         foreach (Transform child in transform)
